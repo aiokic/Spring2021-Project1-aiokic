@@ -1,0 +1,200 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Does Trump defeated by covid?},
+  pdfauthor={Haosheng Ai},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\title{Does Trump defeated by covid?}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{5243 Project 1}
+\author{Haosheng Ai}
+\date{1/22/2021}
+
+\begin{document}
+\maketitle
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+The year 2020 is an unprecedented year that coronavirus changed the
+world. While president election caught the eyes all over the world,
+coronavirus also played an important role during election. Some media
+believe that Trump's terrible performance in handling coronavirus led
+him to the lost. In order to confirm that, i conduct an analysis on the
+2020 pre-election data.
+
+\hypertarget{about-the-data}{%
+\section{About the data}\label{about-the-data}}
+
+The data is the survey responses of voters in the U.S. collected by the
+American National Election Studies (ANES). I choose 2020 Exploratory
+Testing Survey which includes not only the regular question about
+respondents' attitude on candidates but also their views' on covid-19.
+Noticed that most of the data was collected through internet instead of
+face-to-face interview and most of the surveys were happened near mid of
+april.
+
+Since there's no direct data showing the relation between covid-19 and
+lost of election. My project focus on several indirect variables that
+related to either election or covid-19. The variables i chose can be
+categorized by four parts: Birth, Covid-19, Trump's performance , and
+who they vote for.
+
+\hypertarget{analysis-visualization}{%
+\section{Analysis \& Visualization}\label{analysis-visualization}}
+
+To make the process clear, i conduct my analysis by solving three step
+forward question. Question 1: How's Trump performance in handling with
+covid? Question 2: How's other factors? Question 3: How people treat
+Covid refering to supporting rate?
+
+\hypertarget{question-1-hows-trump-performance-in-handling-with-covid}{%
+\subsection{Question 1: How's Trump performance in handling with
+covid?}\label{question-1-hows-trump-performance-in-handling-with-covid}}
+
+First I'm curious how respondents view Trumps performance in handling
+with Covid-19 as well as Trump's support rate before election. Since age
+could make a differ on opinions, so i also conclude age as a variable.
+The used survey question is showed below.
+
+\includegraphics{project1_files/figure-latex/data visualization for p1_1-1.pdf}
+From the plot, without considering degree of opinion, we could see that
+the rates are fair among people. However, the proportion of people who
+extremely strongly disapprove Trump's performance is larger than who
+extremely strongly approve. Upon this, the public opinion is negative on
+this problem.
+\includegraphics{project1_files/figure-latex/data visualization for p1_2-1.pdf}
+This is a typical question before election to investage each candidate's
+support rate. From the graph, Trump is a little behind Biden in all
+three groups. Noticed that elder people have higher voting rate to
+either Trump or Biden than adults, while they had higher rate of
+disapprovement on Trump. This could be a inducement of Trump's lose.
+Overall, people had bad impression on Trump's actions on Covid-19 while
+Trump had a lower supporting rate. However, the lower supporting rate
+may contributed by different reasons,probably not mainly from Covid-19.
+So this lead to Question 2.
+
+\hypertarget{question-2-hows-other-factors}{%
+\subsection{Question 2: How's other
+factors?}\label{question-2-hows-other-factors}}
+
+The survey question on five specific aspects of how Trump did, included
+Covid-19, economic, global fairs, healthcare and immigration.
+
+\includegraphics{project1_files/figure-latex/data visualization for p2-1.pdf}
+Respondents approve Trump's performance on economic, while disagree on
+dealing with healthcare and Covid-19. Refer to Trump's supporting rate,
+i do believe that Covid-19 had a large effect on his support rate. In
+order to make this conclusion more solid, i further check the relation
+between supporting rate of two candidates and people's concerns about
+Covids.
+
+\hypertarget{question-3-how-people-treat-covid-refering-to-supporting-rate}{%
+\subsection{Question 3: How people treat Covid refering to supporting
+rate?}\label{question-3-how-people-treat-covid-refering-to-supporting-rate}}
+
+\includegraphics{project1_files/figure-latex/data visualization for p3-1.pdf}
+\includegraphics{project1_files/figure-latex/data visualization for p3-2.pdf}
+In general,the graphs show that most respondents are worried of getting
+Covid-19 and the economic impact of it. Noticed that more percentage of
+people, who have higher degree of concern on Covid-19, willing to vote
+for Biden. This analysis result, which reflect the components of
+supporting rates, means that more people expected on Biden to deal with
+Coronavirus than Trump.
+
+\hypertarget{limitation}{%
+\section{Limitation}\label{limitation}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Testing way
+\end{enumerate}
+
+Due to coronavirus, almost all of the respondents finish the survey
+through the web instead of face-to-face interview. Due to time
+consuming, they might not treat the survey seriously thus lead to the
+basis. 2. Date of the surveys/n
+
+Since most of the data is collected at the middle of april while
+Coronavirus cases just reached its peak. Respondents might not foresee
+the post impact from such a large number of cases which may lead to a
+basis. Moreover, the election debate, which might largely flip people's
+opinions, was in the October. The data would be more reliable if survey
+dates are close to the election date.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+In short, Covid-19 did a negative effect on Trump's supporting rate and
+is a part of reason on Trump's lose. In this project, I reach the
+conclusion by checking people's opinions on Covid-19 as well as other
+aspects. Then check the effect of Covid-19 by compared with other
+aspects. However, Voting decision is composed by many aspects that's
+hard to predict. The result could be more significant with more data
+that collecting close to election and including more specific question
+on Covid-19.
+
+\end{document}
