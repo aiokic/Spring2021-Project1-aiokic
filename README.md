@@ -13,7 +13,7 @@ Term: Spring 2021
 + This project is conducted by Haosheng Ai
 
 + Project summary: The year 2020 is an unprecedented year that coronavirus changed the world. While president election caught the eyes all over the world, coronavirus also played an important role during election. Some media believe that Trump’s terrible performance in handling coronavirus led him to the lost. In order to confirm that, i conduct an analysis on the 2020 pre-election data.
-
++ You may leave me suggestions on https://github.com/aiokic, thank you. 
 
 ```
 proj/
